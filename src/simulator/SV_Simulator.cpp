@@ -1001,7 +1001,7 @@ std::string print_vcf_sv(std::string chr, int pos, int type_id, std::string end_
 	convert << ";SVMETHOD=SURVIVOR_sim;CHR2=";
 	convert << end_chr;
 	convert << ";END=";
-	convert << end_pos;
+	convert << (type.compare("INS") == 0 ? pos + 1 : end_pos);
 	convert << ";SVLEN=";
 	convert << end_pos - pos;
 	if(type_id==0){
