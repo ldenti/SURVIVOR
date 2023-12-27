@@ -931,6 +931,7 @@ void print_vcf_header2(FILE *&file, std::map<std::string, std::string> genome) {
 	fprintf(file, "%s", "##INFO=<ID=SVMETHOD,Number=1,Type=String,Description=\"Type of approach used to detect SV\">\n");
 	fprintf(file, "%s", "##INFO=<ID=SVTYPE,Number=1,Type=String,Description=\"Type of structural variant\">\n");
 	fprintf(file, "%s", "##INFO=<ID=AF,Number=.,Type=Integer,Description=\"Allele Frequency.\">\n");
+	fprintf(file, "%s", "##INFO=<ID=dup_num,Number=1,Type=Integer,Description=\"Number of duplications\">\n");
 	fprintf(file, "%s", "##FORMAT=<ID=GT,Number=1,Type=String,Description=\"Genotype\">\n");
 
 	fprintf(file, "%s", "#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\tSAMPLE\n");
